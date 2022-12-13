@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap');
+body{
+    margin: 0px;
+    background-color: #242426;
+}
+header{
+    color: orange;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'PT Serif', serif;
+    border-bottom: solid orange;
+}
+
+header h2{
+    margin: 0px;
+}
+
+
+main{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: auto;    
+margin-block: 15px;
+}
+main section{
+    text-align: center;
+    color: white;
+    background-color: #292725;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 320px;
+    height: 320px;
+    border-radius: 15px;
+}
+main section a{
+    color: white;
+}
+main div{
+    display: grid;
+    grid-template-columns: repeat(3,320px);
+    column-gap: 15px;
+    row-gap: 15px;
+}
+footer{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    color:orange;
+    flex-direction: column;
+    align-items: center;
+    font-size: 10px;
+}
+
+
+@media only screen and (max-width: 1020px) {
+    main div{
+        grid-template-columns: repeat(2,320px);
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    main div{
+        grid-template-columns: repeat(1,320px);
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    main section{
+        width: 100%;
+    }
+    main div{
+        grid-template-columns: repeat(1,320px);
+    }
+}
